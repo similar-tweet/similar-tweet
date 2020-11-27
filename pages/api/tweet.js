@@ -26,7 +26,7 @@ function getMoreTweets(tweetId) {
     .catch((e) => console.log(e));
 }
 
-export default function getTweets(res, req) {
+export default (res, req)  => {
   console.log(res, req);
   const { id } = req.body;
   res.statusCode = 200;
